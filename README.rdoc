@@ -1,26 +1,26 @@
 = flash_growler
 
-* FIX (url)
+* http://github.com/midas/flash_growler/tree/master
 
 == DESCRIPTION:
 
-FIX (describe your package)
+A Guilded component that displays Rails flash messages in an interface similar to OS/X's growler.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* guilded
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+
 
 == LICENSE:
 
