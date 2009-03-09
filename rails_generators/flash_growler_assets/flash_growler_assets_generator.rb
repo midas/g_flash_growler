@@ -8,6 +8,7 @@ class FlashGrowlerAssetsGenerator < Rails::Generator::Base
       m.file "guilded.flash_growler.js", "public/javascripts/guilded.flash_growler.js"
       m.directory "public/javascripts/jquery"
       m.file 'jquery-growler-0.1.js', 'public/javascripts/jquery/jquery-growler-0.1.js'
+      m.file 'jquery-growler-0.1.js', 'public/javascripts/jquery/jquery-growler-0.1.min.js'
       m.directory "public/stylesheets/guilded"
       m.directory "public/stylesheets/guilded/flash_growler"
       m.directory "public/stylesheets/guilded/flash_growler/default"

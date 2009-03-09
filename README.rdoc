@@ -23,7 +23,7 @@ slide out of view if JavaScript is enabled.
 Include the gems in your Rails project:
 
   config.gem 'midas-guilded', :version => '0.0.5', :lib => 'guilded', :source => 'http://gems.github.com'
-  config.gem 'midas-flash_growler', :version => '1.0.1', :lib => 'flash_growler', :source => 'http://gems.github.com'
+  config.gem 'midas-flash_growler', :version => '1.0.2', :lib => 'flash_growler', :source => 'http://gems.github.com'
 
 Run generator to create the CSS and JavaScript assets:
 

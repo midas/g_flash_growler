@@ -14,6 +14,7 @@ rails_generators/flash_growler_assets/templates/error.png
 rails_generators/flash_growler_assets/templates/guilded.flash_growler.js
 rails_generators/flash_growler_assets/templates/info.png
 rails_generators/flash_growler_assets/templates/jquery-growler-0.1.js
+rails_generators/flash_growler_assets/templates/jquery-growler-0.1.min.js
 script/console
 script/destroy
 script/generate
