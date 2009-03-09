@@ -7,6 +7,11 @@ http://github.com/midas/flash_growler/tree/master
 A Guilded (http://github.com/midas/guilded/tree/master) component that displays Rails flash messages in an 
 interface similar to OS/X's growler.
 
+== FEATURES:
+
+Looks for flash messages in flash[:error], flash[:warning] and flash[:notice] and displays a message that will 
+slide out of view if JavaScript is enabled.
+
 
 == INSTALL:
 
@@ -33,11 +38,12 @@ in your layout(s):
 
   <%= g_apply_behavior %>
 
+
 == OPTIONS:
 
-* Looks for flash messages in flash[:error], flash[:warning] and flash[:notice].
-
-* :position option accepts 'top' or 'bottom'.
+* :position - 'top' to display the message at the top of the browser or 'bottom' to display message at the bottom (defaults to bottom).
+* :delay - Number of milliseconds to display the message before starting the slide out of view (defaults to 4000 ms).
+* :speed - Number of milliseconds to animate the slide out of view (defaults to 1000 ms).
 
 
 == REQUIREMENTS:
