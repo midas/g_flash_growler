@@ -10,7 +10,7 @@ interface similar to OS/X's growler.
 
 == INSTALL:
 
-	sudo gem install midas-flash_growler
+  sudo gem install midas-flash_growler
 
 
 == USE:
@@ -22,22 +22,22 @@ Include the gems in your Rails project:
 
 Run generator to create the CSS and JavaScript assets:
 
-	script/generate flash_growler_assets
+  script/generate flash_growler_assets
 
 Call the flash growler helper somewhere in your view(s).  I usually call it in the application layout (or another layout):
 
-	<%= g_flash_growler :id => 'growler', :position => 'bottom' %>
+  <%= g_flash_growler :id => 'growler', :position => 'bottom' %>
 	
 Also, as with all Guilded components, a call to the apply behavior helper.  It also makes the most sense to do this 
 in your layout(s):
 
-	<%= g_apply_behavior %>
+  <%= g_apply_behavior %>
 
 == OPTIONS:
 
-Looks for flash messages in flash[:error], flash[:warning] and flash[:notice].
+* Looks for flash messages in flash[:error], flash[:warning] and flash[:notice].
 
-:position option accepts 'top' or 'bottom'.
+* :position option accepts 'top' or 'bottom'.
 
 
 == REQUIREMENTS:
