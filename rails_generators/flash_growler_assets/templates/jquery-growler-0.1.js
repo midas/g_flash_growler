@@ -1,3 +1,4 @@
+/* Copyright © 2009 C. Jason Harrelson (midas) */
 (function($){
 		  
   jQuery.fn.growl = function( opts )
