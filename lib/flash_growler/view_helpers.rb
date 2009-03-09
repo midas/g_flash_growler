@@ -13,7 +13,8 @@ module FlashGrowler
         position_cls = 'growl-bottom'
       end
       
-      add_to_inits( :flash_growler, options, [ 'jquery/jquery-growler-0.1.js' ] )
+      Guilded::Guilder.instance.add( :flash_growler, options, [ 'jquery/jquery-growler-0.1.js' ] )
+      
       if flash[:error]
         return "<div class=\"growl flash error #{position_cls}\" id=\"#{options[:id]}\"><div id=\"growl-icon-error\"></div><h3>Error</h3><p>#{flash[:error]}</p></div>"
       elsif flash[:warning]

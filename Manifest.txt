@@ -3,7 +3,17 @@ Manifest.txt
 PostInstall.txt
 README.rdoc
 Rakefile
+flash_growler.gemspec
 lib/flash_growler.rb
+lib/flash_growler/view_helpers.rb
+rails_generators/flash_growler_assets/flash_growler_assets_generator.rb
+rails_generators/flash_growler_assets/templates/alert.png
+rails_generators/flash_growler_assets/templates/bg.png
+rails_generators/flash_growler_assets/templates/default.css
+rails_generators/flash_growler_assets/templates/error.png
+rails_generators/flash_growler_assets/templates/guilded.flash_growler.js
+rails_generators/flash_growler_assets/templates/info.png
+rails_generators/flash_growler_assets/templates/jquery-growler-0.1.js
 script/console
 script/destroy
 script/generate

@@ -12,7 +12,8 @@ $hoe = Hoe.new('flash_growler', FlashGrowler::VERSION) do |p|
   #   ['activesupport','>= 2.0.2'],
   # ]
   p.extra_dev_deps = [
-    ['newgem', ">= #{::Newgem::VERSION}"]
+    ['newgem', ">= #{::Newgem::VERSION}"],
+    ['midas-guilded', ">=0.0.4"]
   ]
   
   p.clean_globs |= %w[**/.DS_Store tmp *.log]
