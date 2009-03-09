@@ -1,32 +1,57 @@
 = flash_growler
 
-* http://github.com/midas/flash_growler/tree/master
+http://github.com/midas/flash_growler/tree/master
 
 == DESCRIPTION:
 
-A Guilded component that displays Rails flash messages in an interface similar to OS/X's growler.
-
-== FEATURES/PROBLEMS:
-
+A Guilded (http://github.com/midas/guilded/tree/master) component that displays Rails flash messages in an 
+interface similar to OS/X's growler.
 
 
-== SYNOPSIS:
+== INSTALL:
 
+	sudo gem install midas-flash_growler
+
+
+== USE:
+
+Include the gems in your Rails project:
+
+	config.gem 'midas-guilded', :version => '0.0.5', :lib => 'guilded', :source => 'http://gems.github.com'
+  config.gem 'midas-flash_growler', :version => '1.0.1', :lib => 'flash_growler', :source => 'http://gems.github.com'
+
+Run generator to create the CSS and JavaScript assets:
+
+	script/generate flash_growler_assets
+
+Call the flash growler helper somewhere in your view(s).  I usually call it in the application layout (or another layout):
+
+	<%= g_flash_growler :id => 'growler', :position => 'bottom' %>
+	
+Also, as with all Guilded components, a call to the apply behavior helper.  It also makes the most sense to do this 
+in your layout(s):
+
+	<%= g_apply_behavior %>
+
+== OPTIONS:
+
+Looks for flash messages in flash[:error], flash[:warning] and flash[:notice].
+
+:position option accepts 'top' or 'bottom'.
 
 
 == REQUIREMENTS:
 
-* guilded
-
-== INSTALL:
-
+midas-guilded >= 0.0.5
+jQuery 1.3.2 (included with midas-guilded)
+jquery-growler-0.1.js (included with midas-guilded)
 
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME full name
+Copyright (c) 2009 C. Jason Harrelson (midas)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
