@@ -4,11 +4,11 @@
 
 g.flashGrowlerInit = function( options ) 
 {
-	if( g.beforeLiveValidatorInit )
+	if( g.beforeFlashGrowlerInit )
     g.beforeFlashGrowlerInit( options );
 
   $j( '#' + options.id ).growl( options );
 
-	if( g.afterLiveValidatorInit )
+	if( g.afterFlashGrowlerInit )
     g.afterFlashGrowlerInit( options );
 };
