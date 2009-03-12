@@ -1,9 +1,9 @@
 %w[rubygems rake rake/clean fileutils newgem rubigen].each { |f| require f }
-require File.dirname(__FILE__) + '/lib/flash_growler'
+require File.dirname(__FILE__) + '/lib/g_flash_growler'
 
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
-$hoe = Hoe.new('flash_growler', FlashGrowler::VERSION) do |p|
+$hoe = Hoe.new('g_flash_growler', GFlashGrowler::VERSION) do |p|
   p.developer('midas', 'jason@lookforwardenterprises.com')
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.post_install_message = 'PostInstall.txt' # TODO remove if post-install message not required
@@ -13,7 +13,8 @@ $hoe = Hoe.new('flash_growler', FlashGrowler::VERSION) do |p|
   # ]
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"],
-    ['midas-guilded', ">=0.0.7"]
+    ['rails', ">= 2.2.0"],
+    ['midas-guilded', ">=0.1.0"]
   ]
   
   p.clean_globs |= %w[**/.DS_Store tmp *.log]

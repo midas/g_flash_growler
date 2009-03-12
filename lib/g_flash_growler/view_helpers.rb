@@ -1,4 +1,4 @@
-module FlashGrowler
+module GFlashGrowler
   module ViewHelpers
     
     def g_flash_growler( *args )
