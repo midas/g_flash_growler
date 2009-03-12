@@ -6,6 +6,7 @@ class FlashGrowlerAssetsGenerator < Rails::Generator::Base
   def manifest
     record do |m|
       m.file "guilded.flash_growler.js", "public/javascripts/guilded.flash_growler.js"
+      m.file "guilded.flash_growler.min.js", "public/javascripts/guilded.flash_growler.min.js"
       m.directory "public/javascripts/jquery"
       m.file 'jquery-growler-0.1.js', 'public/javascripts/jquery/jquery-growler-0.1.js'
       m.file 'jquery-growler-0.1.js', 'public/javascripts/jquery/jquery-growler-0.1.min.js'
