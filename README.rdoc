@@ -17,16 +17,16 @@ slide out of view if JavaScript is enabled.
 
   sudo gem install midas-g_flash_growler
 
+In Rails environment.rb file:
+
+  config.gem 'midas-g_flash_growler', :version => '1.0.0', :lib => 'g_flash_growler', :source => 'http://gems.github.com'
+
+Run the assets generator:
+
+  script/generate flash_growler_assets_generator
+
 
 == USE:
-
-Include the gem in your Rails project:
-
-  config.gem 'midas-g_flash_growler', :version => '1.0.6', :lib => 'g_flash_growler', :source => 'http://gems.github.com'
-
-Run generator to create the CSS and JavaScript assets:
-
-  script/generate flash_growler_assets
 
 Call the flash growler helper somewhere in your view(s).  I usually call it in the application layout (or another layout):
 
