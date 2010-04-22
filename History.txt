@@ -1,5 +1,9 @@
 == 1.0.8 2010-04-22
 
+* Removed a debugger statement.
+
+== 1.0.8 2010-04-22
+
 * Added a mapping mechanism for differently keyed flash messages.
 
 == 1.0.7 2010-04-22

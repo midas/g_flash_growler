@@ -4,7 +4,7 @@ $:.unshift(File.dirname(__FILE__)) unless
 require 'g_flash_growler/view_helpers'
 
 module GFlashGrowler
-  VERSION = '1.0.8'
+  VERSION = '1.0.9'
 end
 
 if defined?( ActionView )
