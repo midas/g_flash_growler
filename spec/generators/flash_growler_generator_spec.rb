@@ -5,7 +5,6 @@ describe FlashGrowlerGenerator do
   before :each do
     @destination = File.join 'tmp', 'test_app'
     @source = FlashGrowlerGenerator.source_root
-    debugger
     FlashGrowlerGenerator.start '', :destination_root => @destination
   end
   
@@ -25,6 +24,10 @@ describe FlashGrowlerGenerator do
      
     it "should copy '#{file}' to '#{path}'" do
       File.exists?( File.join( @destination, path ) ).should be_true
+    end
+    
+    it "should agree that the contents of '#{file}' are identical to '#{path}'" do
+      File.read( File.join( @source, file ) ).should eql File.read( File.join( @destination, path ) )
     end
   end
 end
