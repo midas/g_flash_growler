@@ -1,3 +1,4 @@
+pkg/*
 .rake_tasks~
 tmp/*
 specifications.html
