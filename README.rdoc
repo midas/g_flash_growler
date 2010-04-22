@@ -13,13 +13,20 @@ Looks for flash messages in flash[:error], flash[:warning] and flash[:notice] an
 slide out of view if JavaScript is enabled.
 
 
+== COMPATABILITY:
+
+* Ruby 1.8
+* Rails 2
+* Rails 3
+
+
 == INSTALL:
 
-  sudo gem install midas-g_flash_growler
+  sudo gem install g_flash_growler
 
 In Rails environment.rb file:
 
-  config.gem 'midas-g_flash_growler', :version => '1.0.0', :lib => 'g_flash_growler', :source => 'http://gems.github.com'
+  config.gem 'g_flash_growler', :version => '1.0.7'
 
 Run the assets generator:
 
@@ -48,9 +55,9 @@ in your layout(s):
 == REQUIREMENTS:
 
 * Rails >= 2.2.0
-* midas-guilded >= 0.1.o (http://github.com/midas/guilded/tree/master)
+* guilded >= 1.0.0 (http://github.com/midas/guilded/tree/master)
 * jQuery 1.3.2 (included with midas-guilded)
-* jquery-growler-0.1.js (included with midas-guilded)
+* jquery-growler-0.1.js
 
 
 == LICENSE:

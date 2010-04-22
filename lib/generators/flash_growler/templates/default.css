@@ -1,0 +1,22 @@
+.growl { 
+  position:absolute; z-index:999;
+  background:transparent url(/stylesheets/guilded/flash_growler/default/bg.png) repeat-x;
+  height:100px; width:100%; color:#FFF; font-family:Verdana;
+  opacity:0.85;
+}
+#growl-icon-msg { 
+  background:transparent url(/stylesheets/guilded/flash_growler/default/info.png) no-repeat; 
+  width:64px; height:64px; float:left; margin:19px 0 0 20px;
+}
+#growl-icon-alert { 
+  background:transparent url(/stylesheets/guilded/flash_growler/default/alert.png) no-repeat; 
+  width:64px; height:64px; float:left; margin:19px 0 0 20px;
+}
+#growl-icon-error { 
+  background:transparent url(/stylesheets/guilded/flash_growler/default/error.png) no-repeat; 
+  width:64px; height:64px; float:left; margin:19px 0 0 20px;
+}
+.growl-top { top:0; }
+.growl-bottom { bottom:0; }
+.growl h3 { font-size:15px; font-weight:normal; margin:12px 0 0 100px; }
+.growl p { font-size:11px; font-weight:normal; margin:12px 0 0 100px; }
