@@ -1,11 +1,11 @@
 require 'spec_helper'
-require 'generators/flash_growler/flash_growler_generator'
+require 'generators/flash_growler/assets/assets_generator'
 
-describe FlashGrowlerGenerator do
+describe AssetsGenerator do
   before :each do
     @destination = File.join 'tmp', 'test_app'
-    @source = FlashGrowlerGenerator.source_root
-    FlashGrowlerGenerator.start '', :destination_root => @destination
+    @source = AssetsGenerator.source_root
+    AssetsGenerator.start '', :destination_root => @destination
   end
   
   after :each do
