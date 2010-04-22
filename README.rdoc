@@ -43,12 +43,14 @@ Run the assets generator:
 
 Call the flash growler helper somewhere in your view(s).  I usually call it in the application layout (or another layout):
 
-  <%= g_flash_growler :id => 'growler', :position => 'bottom' %>
+  <%= raw( g_flash_growler( :id => 'growler', :position => 'bottom' ) ) %>    # Rails 3
+  <%= g_flash_growler( :id => 'growler', :position => 'bottom' ) %>           # Rails 2
 	
 Also, as with all Guilded components, a call to the apply behavior helper.  It also makes the most sense to do this 
 in your layout(s):
 
-  <%= g_apply_behavior %>
+  <%= raw g_apply_behavior %>    # Rails 3
+  <%= g_apply_behavior %>        # Rails 2
 
 
 == OPTIONS:
