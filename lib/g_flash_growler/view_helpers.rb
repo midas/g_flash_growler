@@ -12,7 +12,6 @@ module GFlashGrowler
       
       flash_key = flash.keys.first
       unless [:error, :warning, :notice].include?( flash_key )
-        debugger
         mapped_key = mappings[flash_key.to_sym]
         flash[mapped_key.to_sym] = flash[flash_key] 
       end
