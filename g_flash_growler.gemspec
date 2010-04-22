@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.files = [
     ".gitignore",
      "History.txt",
-     "PostInstall.txt",
      "README.rdoc",
      "Rakefile",
      "VERSION",
@@ -26,16 +25,15 @@ Gem::Specification.new do |s|
      "lib/g_flash_growler.rb",
      "lib/g_flash_growler/view_helpers.rb",
      "lib/generators/flash_growler/flash_growler_generator.rb",
-     "lib/generators/templates/alert.png",
-     "lib/generators/templates/bg.png",
-     "lib/generators/templates/default.css",
-     "lib/generators/templates/error.png",
-     "lib/generators/templates/guilded.flash_growler.js",
-     "lib/generators/templates/guilded.flash_growler.min.js",
-     "lib/generators/templates/info.png",
-     "lib/generators/templates/jquery-growler-0.1.js",
-     "lib/generators/templates/jquery-growler-0.1.min.js",
-     "pkg/g_flash_growler-1.0.7.gem",
+     "lib/generators/flash_growler/templates/alert.png",
+     "lib/generators/flash_growler/templates/bg.png",
+     "lib/generators/flash_growler/templates/default.css",
+     "lib/generators/flash_growler/templates/error.png",
+     "lib/generators/flash_growler/templates/guilded.flash_growler.js",
+     "lib/generators/flash_growler/templates/guilded.flash_growler.min.js",
+     "lib/generators/flash_growler/templates/info.png",
+     "lib/generators/flash_growler/templates/jquery-growler-0.1.js",
+     "lib/generators/flash_growler/templates/jquery-growler-0.1.min.js",
      "rails_generators/flash_growler_assets/flash_growler_assets_generator.rb",
      "rails_generators/flash_growler_assets/templates/alert.png",
      "rails_generators/flash_growler_assets/templates/bg.png",
@@ -50,6 +48,7 @@ Gem::Specification.new do |s|
      "script/destroy",
      "script/generate",
      "spec/flash_growler_spec.rb",
+     "spec/generators/flash_growler_generator_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
      "tasks/rspec.rake"
@@ -61,6 +60,7 @@ Gem::Specification.new do |s|
   s.summary = %q{A Guilded component that displays Rails flash messages in an interface similar to OS/X's growler.}
   s.test_files = [
     "spec/flash_growler_spec.rb",
+     "spec/generators/flash_growler_generator_spec.rb",
      "spec/spec_helper.rb"
   ]
 
