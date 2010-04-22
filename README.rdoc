@@ -52,6 +52,12 @@ in your layout(s):
   <%= raw g_apply_behavior %>    # Rails 3
   <%= g_apply_behavior %>        # Rails 2
 
+To map differently keyed flash messages into one of the flash growler's:
+
+  <%= g_flash_growler( :id => 'growler', :position => 'bottom', :mappings => { :alert => :warning } ) %>
+
+This will map flash[:alert] to flash[:warning] so that flash growler will react to the message.
+
 
 == OPTIONS:
 
