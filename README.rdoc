@@ -22,15 +22,21 @@ slide out of view if JavaScript is enabled.
 
 == INSTALL:
 
-  sudo gem install g_flash_growler
+Configure the Gem for use:
 
-In Rails environment.rb file:
+  gem 'g_flash_growler', '1.0.7'                      # Rails 3
+  config.gem 'g_flash_growler', :version => '1.0.7'   # Rails 2
 
-  config.gem 'g_flash_growler', :version => '1.0.7'
+Install the Gem:
+
+  bundle install                 # Rails 3
+  rake gems:install              # Rails 2
+  gem install g_flash_growler    # Manual
 
 Run the assets generator:
 
-  script/generate flash_growler_assets_generator
+  rails generate flash_growler                     # Rails 3
+  script/generate flash_growler_assets_generator   # Rails 2
 
 
 == USE:
